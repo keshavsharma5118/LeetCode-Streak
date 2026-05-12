@@ -22,4 +22,13 @@ class Solution {
             // return statement
             return answer;
     }
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int [] nums = {13,25,83,77};
+        int [] result = s.separateDigits(nums);
+        for(int i : result){
+            System.out.print(i+" ");
+        }
+    }
+    
 }
