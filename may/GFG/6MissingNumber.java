@@ -9,7 +9,6 @@ class Solution {
         for(int i = 0 ; i < size ; i++){
             currentSum += arr[i];
         }
-        
         return (int)(totalSum - currentSum);
     }
 }
