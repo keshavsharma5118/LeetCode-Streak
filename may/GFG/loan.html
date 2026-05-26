@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loan Summary Statement</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f3f4f6;
+    padding:15px;
+    color:#222;
+}
+
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 4px 15px rgba(0,0,0,.1);
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.header h1{
+    font-size:28px;
+    margin-bottom:5px;
+}
+
+.header p{
+    color:#666;
+    font-size:14px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.card{
+    background:#fafafa;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+}
+
+.label{
+    font-size:12px;
+    color:#777;
+}
+
+.value{
+    margin-top:6px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.highlight{
+    color:#d63031;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+table th{
+    background:#f0f0f0;
+}
+
+th,td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+.footer{
+    text-align:center;
+    margin-top:18px;
+    font-size:12px;
+    color:#777;
+}
+
+.status{
+    display:inline-block;
+    margin-top:10px;
+    padding:7px 15px;
+    border-radius:20px;
+    background:#d4edda;
+    color:#155724;
+    font-size:13px;
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.cards{
+    grid-template-columns:1fr;
+}
+
+.value{
+    font-size:18px;
+}
+
+.container{
+    padding:15px;
+}
+
+}
+
+/* Print */
+
+@media print{
+
+body{
+    background:white;
+    padding:0;
+}
+
+.container{
+    max-width:100%;
+    box-shadow:none;
+    border:none;
+    page-break-inside:avoid;
+}
+
+@page{
+    size:A4;
+    margin:10mm;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h1>Loan Summary Statement</h1>
+<p>Printable • Mobile Friendly • One Page PDF Ready</p>
+<div class="status">Loan Active</div>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<div class="label">Principal Amount</div>
+<div class="value">₹59,000</div>
+</div>
+
+<div class="card">
+<div class="label">Total Repayment</div>
+<div class="value highlight">₹94,170</div>
+</div>
+
+<div class="card">
+<div class="label">Interest Paid</div>
+<div class="value">₹35,170</div>
+</div>
+
+<div class="card">
+<div class="label">Duration</div>
+<div class="value">13 Months</div>
+</div>
+
+<div class="card">
+<div class="label">Monthly Interest Rate</div>
+<div class="value">4.59%</div>
+</div>
+
+<div class="card">
+<div class="label">Annual Interest Rate</div>
+<div class="value highlight">55.1%</div>
+</div>
+
+</div>
+
+<table>
+
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+
+<tr>
+<td>Average Monthly Payment</td>
+<td>₹7,245</td>
+</tr>
+
+<tr>
+<td>Interest over Principal</td>
+<td>59.61%</td>
+</tr>
+
+<tr>
+<td>Total Interest Cost</td>
+<td>₹35,170</td>
+</tr>
+
+<tr>
+<td>Total Loan Cost</td>
+<td>₹94,170</td>
+</tr>
+
+</table>
+
+<div class="footer">
+Generated Loan Report | Single A4 Page Layout
+</div>
+
+</div>
+
+</body>
+</html>
